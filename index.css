@@ -1,0 +1,430 @@
+body,div,p,ul,li{
+    margin: 0;
+    padding: 0;
+    font: 12px 宋体;
+}
+/*清除边框*/
+img,input{
+    border: 0 none;
+}
+/*清除轮廓线*/
+input{
+    outline-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul,li{
+   list-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*顶部导航*/
+.top-nav{
+    height: 26px;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    background: #f7f7f7;
+}
+.top-nav-con,.search{
+    width: 970px;
+    margin: 0 auto;
+    height: 26px;
+}
+.left-t-con,.right-t-con li{
+    /*居中对齐*/
+    height: 26px;
+    line-height: 26px;
+}
+.right-t-con li{
+    float: left;
+    background: url("picture/03sj.png") no-repeat right;
+}
+.right-t-con li a{
+    display: inline-block;
+    height: 26px;
+    padding:0 10px;
+}
+.right-t-con li a:hover{
+    color: #00A000;
+}
+/*顶部导航结束*/
+/*搜索开始*/
+.search{
+    margin-top: 15px;
+}
+/*注意 图片的大小即宽高要设置好否则列表第一项不能对齐*/
+.logo{
+    width: 200px;
+    height: 84px;
+}
+.r-search{
+    width: 528px;
+    height: 40px;
+    border: 1px solid #c9c9c9;
+    background: #eeeeee;
+    margin-top: 30px;
+    padding: 5px 5px 5px 4px;
+}
+/*属性选择器*/
+.r-search input[type="text"]{
+    width: 419px;
+    height: 28px;
+    border: 1px solid #a6a6a6;
+    margin-top: 5px;
+    float: left;
+    border-right: 0 none;
+    vertical-align: middle;
+}
+.r-search input[type="button"]{
+    width: 99px;
+    height: 32px;
+    background: url("picture/03serch.png");
+    /*float: right;*/
+    margin-top: 5px;
+    vertical-align: middle;
+}
+/*搜索结束*/
+/*主导航开始*/
+.nav{
+    width: 970px;
+    height: 25px;
+    /*logo图标和下面导航栏的距离10，水平居中*/
+    margin: 10px auto;
+    /*下边距样式*/
+    border-bottom: 3px solid #0266a3;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    /*列表的每一项距内边框的距离*/
+    padding: 0 15px;
+    color: #0266a3;
+}
+.nav li a:hover{
+    color: #fff;
+    background: #0266a3;
+}
+/*主导航结束*/
+/*商机市场开始*/
+.mar{
+    width: 970px;
+    height: 210px;
+    margin: 0 auto;
+}
+.mar-left{
+    height: 210px;
+    width: 200px;
+    background: #ebf0f6;
+}
+.mar-title{
+    height: 30px;
+    background: #0266a3;
+    color: #fff;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.mar-list{
+    margin-top: 5px;
+}
+.mar-list li{
+    height: 28px;
+    line-height: 28px;
+    /*文字距离左边的距离*/
+    padding-left: 39px;
+}
+.mar-list li.icon1{
+    /*布局是left到左边的距离，9 px就是距离值*/
+    background: url("picture/03icon_1.png") no-repeat 9px;
+}
+.mar-list li.icon2{
+    background: url("picture/03icon_2.png") no-repeat 9px;
+}
+.mar-list li.icon3{
+    background: url("picture/03icon_3.png") no-repeat 9px;
+}
+.mar-list li.icon4{
+    background: url("picture/03icon_4.png") no-repeat 9px;
+}
+.mar-list li.icon5{
+    background: url("picture/03icon_5.png") no-repeat 9px;
+}
+.mar-list li.icon6{
+    background: url("picture/03icon_6.png") no-repeat 9px;
+}
+.mar-right{
+    width: 234px;
+    height: 210px;
+}
+.mar-right img[src="picture/03center-r.png"]{
+    margin-bottom: 21px;
+    border-right: 1px solid #e0e6f0;
+}
+/*商机市场结束*/
+/*建筑材料开始*/
+.bud{
+    /*注意这里宽度为了和上面统一，我们初始化970，但是文字和左边有距离22，这时宽度要970-22=948*/
+    width: 948px;
+    height: 34px;
+    margin: 14px auto 11px;
+    padding-left: 22px;
+
+    background: #ecf1f7;
+    border-top: 2px solid #c3d7e4;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 34px;
+}
+/*建筑材料结束*/
+/*建筑材料列表大盒子开始*/
+.pro{
+    width: 970px;
+    margin: 0 auto;
+    height: 344px;
+}
+.pro-left{
+    width: 727px;
+    height: 344px;
+    border: 1px solid #d8d8d8;
+    /*background: #aaa;*/
+}
+.pro-right{
+    width: 228px;
+    height: 344px;
+    border: 1px solid #d8d8d8;
+}
+/*建筑材料列表大盒子结束*/
+/*建筑材料列表大盒子列表开始*/
+.pro-left-top{
+    width: 656px;
+    height: 142px;
+    margin: 15px 0 14px 26px;
+}
+.pro-pic-left{
+    width: 318px;
+    height: 142px;
+    /*background: red;*/
+}
+.pro-pic-right{
+    width: 318px;
+    height: 142px;
+    /*background: green;*/
+}
+.pro-pic-ll{
+    height: 142px;
+    width: 97px;
+    /*background: yellow;*/
+}
+.pro-pic-llt{
+    width: 97px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid #cacaca;
+}
+.pro-pic-llt img{
+    margin-top: 18px;
+
+}
+.pro-pic-btn input{
+    width: 98px;
+    height: 26px;
+    background: url("picture/03buy.png") no-repeat;
+    margin-top: 14px;
+}
+/*4个p标签*/
+.pro-pic-lr p{
+    margin-left: 11px;
+    font-size: 14px;
+}
+.pro-pic-lr p.txt1{
+    height: 28px;
+    margin-top: 10px;
+}
+.pro-pic-lr p.txt2{
+    height: 49px;
+}
+.pro-pic-lr p.txt3{
+    height: 38px;
+}
+.pro-pic-lr p del{
+    font-size: 12px;
+}
+.pro-pic-lr p span{
+    color: #FF0000;
+    font-weight: 700;
+}
+.pro-line{
+    border-top: 1px solid #eee;
+    margin: 0 5px;
+}
+.pro-right-title{
+    height: 28px;
+    padding-left: 15px;
+    background: #fbfbfb;
+    border-bottom: 1px solid #e0e6f6;
+    line-height: 28px;
+}
+.pro-right ul {
+    list-style: none;
+    margin-top: 17px;
+}
+.pro-right ul li{
+    padding-left: 25px;
+    height: 24px;
+    /*距离左边15 顶部6*/
+    background: url("picture/03li_bg.png") no-repeat 10px 6px;
+
+}
+.pro-right ul li a{
+    text-decoration: none;
+}
+.pro-right ul li a:hover{
+    color: #FF0000;
+    text-decoration: underline;
+}
+/*建筑材料列表大盒子列表结束*/
+/*儿童安全座椅开始*/
+/*儿童安全座椅结束*/
+
+/*儿童安全座椅列表开始*/
+.child{
+    margin: 0 auto;
+    width: 970px;
+    height: 326px;
+}
+.child-left{
+    width: 722px;
+    height: 326px;
+}
+.child-l-top{
+    height: 23px;
+    border-bottom: 2px solid #00b0e7;
+    background: url("picture/03et.png") no-repeat;
+}
+.child-l-bottom{
+    /*宽度不写 默认父盒子child-left的宽度722*/
+    height: 301px;
+    border: 1px solid #cacaca;
+}
+.child-l-top h3{
+    font-size: 14px;
+    color: #00b0e7;
+    font-weight: 700;
+    height: 23px;
+    line-height: 23px;
+    width: 100px;
+    /*规避脱标流，DIV块左侧auto是充满状态*/
+    margin-left: auto;
+    /*盒子内容居右对齐,默认是左对齐*/
+    text-align: right;
+}
+.child-pic{
+    /*图片的宽度*/
+    width: 164px;
+    margin: 5px 0 0 13px;
+    text-align: center;
+}
+.child-pic p.et1{
+    height: 43px;
+    margin-top: 9px;
+    color: #999;
+}
+.child-pic p.et2,.child-pic p.et3,.child-pic p.et4{
+    height: 24px;
+    color: #999;
+}
+.child-pic p.et3 del,.child-pic p.et4 span{
+    color: #FF0000;
+}
+
+.child-right{
+    width: 218px;
+    height: 326px;
+}
+.child-right img[src="picture/03et_right.png"]{
+    border: 1px solid #9d9d9d;
+    margin-bottom: 15px;
+}
+/*儿童安全座椅列表结束*/
+
+/*工艺艺术品开始*/
+.pro-right li.subtitle{
+    /*图片高度*/
+    height: 75px;
+    /*取消前面的小圆点，属于背景*/
+    background: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#777;
+    margin-bottom: 24px;
+}
+.pro-right li.subtitle img{
+    float: left;
+    margin-right: 5px;
+}
+/*工艺艺术品结束*/
+
+/*友情链接开始*/
+.friendlink{
+    /*shang zuoyou xia*/
+    margin: 10px auto 0;
+    width: 970px;
+    height: 102px;
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #0a7ec3;
+}
+.friendlink .frlink{
+    height: 38px;
+}
+/*设置上边距*/
+.friendlink .frlink,.friendlink ul{
+    margin-top: 30px;
+}
+.friendlink .frlink,.friendlink li{
+    float: left;
+}
+/*爱加盟网上下两层之间间距,左右间距*/
+.friendlink li{
+    margin-bottom: 14px;
+    padding: 0 4px;
+}
+.friendlink li a:hover{
+    color: #FF0000;
+    text-decoration: underline;
+}
+/*友情链接结束*/
+
+/*页脚开始*/
+.copyright{
+    height: 90px;
+}
+.copyright ul{
+    /*这里宽度我们不用970，因为ul的位置在居中，但是对齐的时候是竖直的我们把高度定短点*/
+    width: 700px;
+    height: 14px;
+    margin: 15px auto 13px;
+}
+.copyright ul li{
+    height: 14px;
+    float: left;
+    /*定背景图片的位置*/
+    padding: 0 10px;
+    /*背景图右边显示，默认在左边*/
+    background: url("picture/03footer_bg.png") no-repeat right;
+}
+.copyright p{
+    text-align: center;
+}
+.copyright .copy{
+    margin-top: 10px;
+}
+/*页脚结束*/
